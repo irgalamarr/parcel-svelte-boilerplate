@@ -1,0 +1,40 @@
+{
+  "name": "swedish-bitter",
+  "version": "0.0.1",
+  "description": "Adaptive landing page (Parcel && Svelte)",
+  "author": "Irina Grinko",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "parcel index.html --no-cache",
+    "build": "parcel build index.html",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "src/**/*.{js,json,css,md}": [
+      "eslint",
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "browserslist": [
+    "last 3 versions"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^7.2.5",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.1",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.17.0",
+    "eslint-config-htmlacademy": "0.5.x",
+    "eslint-plugin-prettier": "^2.6.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^6.1.0",
+    "parcel-bundler": "^1.10.3",
+    "parcel-plugin-svelte": "^1.2.3",
+    "prettier": "1.10.2",
+    "stylelint": "9.4.x",
+    "stylelint-config-htmlacademy": "0.1.x",
+    "svelte": "^2.14.3"
+  }
+}
